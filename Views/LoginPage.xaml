@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPNro4_Punto2.Views.LoginPage"
+            NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#404040">
+    
+        <VerticalStackLayout Padding="32,32,32,24">
+        <Image Source="logocrunch.png" 
+                   HeightRequest="300" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" />
+        <Entry x:Name="edtUser"
+                   Placeholder="Username"
+                   PlaceholderColor="#D3D3D3"
+                   TextColor="#E6E6E6"
+                   HeightRequest="49"
+                   Margin="0,20,0,0"></Entry>
+        <Entry
+            x:Name="edtPass"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   PlaceholderColor="#D3D3D3"
+                   TextColor="#E6E6E6"
+                   HeightRequest="49"
+                   Margin="0,20,0,0" 
+            ></Entry>
+
+        <Button x:Name="btnLogin"
+                    Text="Login"
+                    TextColor="#D3D3D3"
+                    BackgroundColor="#F47521"
+                    FontSize="20"
+                    HeightRequest="48"
+                    VerticalOptions="EndAndExpand"
+                    Margin="0,110,0,0"
+                    Clicked="OnLoginClicked" />
+        </VerticalStackLayout>
+    
+</ContentPage>

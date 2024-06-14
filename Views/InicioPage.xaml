@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPNro4_Punto2.Views.InicioPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#505050">
+
+    <Grid>
+        
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+                                 Padding="14"
+                                 Spacing="6"
+                                 MinimumHeightRequest="800">
+                <Image Source="crunchimg.jpg"
+                       HeightRequest="200"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Start" />
+
+                <Label Text="Que es crunchyroll?"
+                       TextColor="#D3D3D3"
+                       FontSize="16"
+                       FontFamily="sans-serif-black" />
+
+                <Label Text="Crunchyroll es una plataforma de streaming de contenido de anime."
+                       TextColor="#D3D3D3"
+                       FontSize="13" />
+
+                <Label Text="La plataforma se especializa en la transmision de contenido de anime dramas coreanos taiwaneses chinos y japoneses,y ha ganado una gran popularidad entre los fanaticos de este genero."
+                       TextColor="#D3D3D3"
+                       FontSize="13"
+                       Padding="0,0,0,5" />
+
+                <Image Source="img3.png"
+                       HeightRequest="180"
+                       HorizontalOptions="Center" />
+
+                <Label Text="Crunchyroll es una de las plataformas de streaming mas populares en el mundo con mas de 120 millones de
+usuarios registrados y 10 millones de suscriptores pagos la plataforma es disponible en mas de 200 paises y ofrece contenido en varios idiomas incluyendo ingles, español,frances, aleman, italiano, portugues, coreano, chino simplificado y japones"
+                       TextColor="#D3D3D3"
+                       FontSize="13"
+                       Padding="0,5,0,0" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        
+        <Grid Grid.Row="1"
+              BackgroundColor="#505050"
+              Padding="16"
+              ColumnSpacing="16"
+              VerticalOptions="End">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnVolver"
+                    Text="Acerca"
+                    TextColor="#D3D3D3"
+                    BackgroundColor="#F47521"
+                    FontFamily="MavenPro-Medium"
+                    FontSize="20"
+                    CornerRadius="18"
+                    HeightRequest="50"
+                    Grid.Column="0" 
+                    Clicked="btnAcerca_Clicked"/>
+
+            <Button x:Name="btnSalir"
+                    Text="Salir"
+                    TextColor="#D3D3D3"
+                    BackgroundColor="#F47521"
+                    FontFamily="MavenPro-Medium"
+                    FontSize="20"
+                    CornerRadius="18"
+                    HeightRequest="50"
+                    Grid.Column="1" 
+                    Clicked="btnSalir_Clicked"/>
+        </Grid>
+    </Grid>
+
+
+
+
+
+
+</ContentPage>

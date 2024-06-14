@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TPNro4_Punto2.Views.AcercaPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="AcercaPage"
+             BackgroundColor="#505050">
+    
+        <VerticalStackLayout>
+
+            <Image x:Name="imageView2"
+                   Source="img2.jpg"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start" 
+                   WidthRequest="200"
+                 HeightRequest="200"
+                Aspect="AspectFit"/>
+
+            <VerticalStackLayout Padding="16,8,16,16">
+                <Label Text="Fernandez Moralez Smith"
+                       FontFamily="sans-serif-black"
+                       TextColor="#D3D3D3"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" Margin="0,0,0,5"
+                       />
+                
+
+                <Label Text="Contactos del programador"
+                       TextDecorations="Underline"
+                       
+                       TextColor="#D3D3D3"
+                       FontSize="20"
+                       HorizontalTextAlignment="Center" Margin="0,0,0,5"/>
+
+                <Label Text="Gmail --> fernanmoral12@gmail.com celular --> 2954556623"
+                       TextColor="#D3D3D3"
+                       FontSize="17"
+                       HorizontalTextAlignment="Start" Margin="0,0,0,5"/>
+
+                
+                
+                
+                
+            <Frame BackgroundColor="#333333" Padding="9" BorderColor="#1f1f1f" CornerRadius="20" Margin="0,0,0,5" >
+                    <HorizontalStackLayout>
+                        <Label Text="Enviar correo electronico: "
+                               TextColor="#D3D3D3"
+                               FontSize="20"
+                               VerticalOptions="Center" />
+
+                        <Button x:Name="btnEmail" 
+                                WidthRequest="50"
+                                HeightRequest="40"
+                                BackgroundColor="#823E12"
+                                ImageSource="sendicon.png"
+                                VerticalOptions="Center"     
+                                Margin="16,0,0,0"
+                                
+                                />
+                    </HorizontalStackLayout>
+                </Frame>
+
+            <Frame BackgroundColor="#333333" Padding="3" Margin="0,0,0,5">
+                    <Editor x:Name="edtAsunto"
+                            Placeholder="Ingrese el asunto"
+                            TextColor="#E1E3E5"
+                            PlaceholderColor="#747679"
+                            FontSize="18"
+                             />
+                </Frame>
+
+            <Frame BackgroundColor="#333333" Padding="3" Margin="0,0,0,5">
+                    <Editor x:Name="edtMensaje"
+                            Placeholder="Ingrese el mensaje..."
+                            TextColor="#E1E3E5"
+                            PlaceholderColor="#747679"
+                            FontSize="18"
+                            />
+                </Frame>
+
+            <Frame BackgroundColor="#333333" Padding="9" BorderColor="#1f1f1f" CornerRadius="10" Margin="0,0,0,5">
+                <HorizontalStackLayout >
+                    <Label Text="Realizar llamada telefonica: "
+                               TextColor="#E1E3E5"
+                               FontSize="20"
+                               VerticalOptions="Center"
+                               />
+                    <Button x:Name="btnLlamar"
+                                WidthRequest="50"
+                                HeightRequest="40"
+                                BackgroundColor="#823E12"
+                                ImageSource="iconcall.png"
+                                VerticalOptions="Center" 
+                           
+                               />
+                </HorizontalStackLayout>
+            </Frame>
+
+            
+            <Button x:Name="btnVolver"
+                        Text="Volver"
+                        BackgroundColor="#F47521"
+                        TextColor="#E1E3E5"
+                        FontSize="20"
+                        Margin="0,40,0,0"
+                        CornerRadius="15"
+                        HeightRequest="48"
+                        VerticalOptions="EndAndExpand"
+                        Clicked="btnVolver_Clicked"
+                        />
+            
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    
+</ContentPage>
